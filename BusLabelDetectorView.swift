@@ -118,7 +118,7 @@ class LabelDetectorModel {
         
         return try await withCheckedThrowingContinuation { continuation in
             // Load the Core ML model
-            guard let modelURL = Bundle.main.url(forResource: "YOLOv3TinyFP16", withExtension: "mlmodelc") else {
+            guard let modelURL = Bundle.main.url(forResource: "yolov11n", withExtension: "mlmodelc") else {
                 let discovery = Self.discoverBundledModels()
 
                 let hasMlpackage = discovery.mlpackages.contains(where: { $0 == "yolov11n.mlpackage" })
