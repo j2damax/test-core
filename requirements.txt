@@ -1,0 +1,27 @@
+# Requirements for Bus Label Detection Model Training
+# For use with aisee_test.ipynb
+
+# Core dependencies
+ultralytics>=8.0.0        # YOLOv11 implementation
+coremltools>=7.0          # CoreML model export
+roboflow>=1.0.0           # Dataset management
+
+# Supporting libraries (usually included with ultralytics)
+torch>=2.0.0              # PyTorch for model training
+torchvision>=0.15.0       # Vision utilities
+opencv-python>=4.8.0      # Image processing
+Pillow>=10.0.0            # Image handling
+numpy>=1.24.0             # Numerical operations
+matplotlib>=3.7.0         # Visualization
+pyyaml>=6.0               # Configuration files
+
+# Google Colab specific (automatically available in Colab)
+# ipython
+# google-colab
+
+# Optional but recommended
+tqdm>=4.65.0              # Progress bars
+pandas>=2.0.0             # Data handling
+
+# Note: This notebook is designed to run in Google Colab with GPU
+# For local execution, ensure you have CUDA-capable GPU and appropriate drivers
